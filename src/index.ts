@@ -1,6 +1,6 @@
-import * as express from "express"
+import  express from "express"
 import { AppDataSource } from "./data-source"
-import * as cors from "cors"
+import cors from "cors"
 import routes from "./routes"
 
 const PORT  = 3000

@@ -1,6 +1,8 @@
-import { Entity, ObjectIdColumn, ObjectId, Column } from "typeorm"
+import { IsNotEmpty } from "class-validator"
+import { Entity, ObjectIdColumn, ObjectId, Column, Unique } from "typeorm"
 
 @Entity()
+@Unique(["email"])
 export class User {
 
     @ObjectIdColumn()
@@ -15,4 +17,7 @@ export class User {
     @Column()
     age: number
 
+    @Column()
+    @IsNotEmpty()
+    email: string
 }

@@ -23,6 +23,7 @@
       "jsonwebtoken": "^9.0.2",
       "mongodb": "^5.2.0",
       "reflect-metadata": "^0.1.13",
+      "sanitize-html": "^2.13.0",
       "typeorm": "0.3.20"
    },
    "scripts": {
