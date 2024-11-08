@@ -15,5 +15,4 @@ AppDataSource.initialize().then(async () => {
     app.listen(PORT, () => {
         console.log(`Server started at http://localhost:${PORT}`)
     })
-
 }).catch(error => console.log(error))
